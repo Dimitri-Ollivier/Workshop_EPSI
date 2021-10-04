@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/../../../../xampp/php" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/composer" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/phpunit/phpunit" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/WorkshopB3/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>
