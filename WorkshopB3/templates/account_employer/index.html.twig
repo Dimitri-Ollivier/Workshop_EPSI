@@ -151,7 +151,7 @@
 
             </div>
 
-            <input required="required" id="mail" type="text" name="mail" placeholder="Adresse mail">
+            <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required="required" id="mail" type="text" name="mail" placeholder="Adresse mail">
             <input required="required" id="entreprise" type="text" name="entreprise" placeholder="Nom entreprise">
             <br></br>
             <input id="submit" type="submit" class="butAjouter" value="Ajouter">
