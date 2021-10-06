@@ -1,0 +1,204 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Création compte utilisateur!{% endblock %}
+
+{% block body %}
+    <style>
+        #form {
+            position: relative;
+            width: 500px;
+            margin: 50px auto 100px auto;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+            width: 470px;
+            height: 50px;
+            padding: 0px 15px 0px 15px;
+        }
+
+        label {
+            margin-bottom: unset;
+        !important;
+            padding: 0px 0px 0px 10px;
+
+        }
+
+        input {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+            width: 470px;
+            height: 50px;
+            padding: 0px 15px 0px 15px;
+
+            background: transparent;
+            outline: none;
+            color: #726659;
+
+            border: solid 1px #b3aca7;
+            border-bottom: none;
+
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            margin-left: revert;
+        }
+
+        input:hover {
+            background: #EEEDEE;
+            color: #fffff;
+        }
+
+        textarea {
+            width: 470px;
+            max-width: 470px;
+            height: 110px;
+            max-height: 110px;
+            padding: 15px;
+            resize: none;
+
+            background: transparent;
+            outline: none;
+
+            color: #726659;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+
+            border: solid 1px #b3aca7;
+
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+        }
+
+        textarea:hover {
+            background: #EEEDEE;
+        }
+
+        .butAjouter {
+            background-color: rgb(254, 87, 22);
+            color: white;
+            padding: 5px 10px 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 8px;
+            transition-duration: 0.2s;
+            border: 2px solid rgb(254, 87, 22);
+            font-weight: 400;
+            font-family: Frutiger, Arial, Helvetica, sans-serif;
+            width: 100%;
+        }
+
+        .butAjouter:hover {
+            background-color: white;
+            color: rgb(254, 87, 22);
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+        }
+
+        .butAjouter:active {
+            background-color: DCD3D6;
+            box-shadow: 0 2px #666;
+            transform: translateY(2px);
+
+        }
+
+        .checkbox, .radioBut {
+            width: auto;
+            height: auto;
+        }
+
+        .marge35 {
+            margin-left: 35%;
+        }
+
+        .checkForm {
+            width: fit-content;
+        }
+
+        .genre, .actif {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+            width: 470px;
+            height: 50px;
+            padding: 0px 15px 0px 15px;
+            display: inline-flex;
+            border: solid 1px #b3aca7;
+            border-bottom: none;
+            align-items: center;
+        }
+
+        .actif {
+            border: solid 1px #b3aca7;
+        }
+
+    </style>
+
+    <div>
+        <form id="form" method="post">
+            <input required="required" id="nom" type="text" name="nom" placeholder="Nom">
+            <input required="required" id="prenom" type="text" name="prenom" placeholder="Prénom">
+
+            <div class="genre">
+                <span>Genre :</span>
+
+                <input class="radioBut" id="H" type="radio" name="genre" value="H" checked>
+                <label for="H">Homme</label>
+
+                <input class="radioBut" id="F" type="radio" name="genre" value="F">
+                <label for="F">Femme</label>
+
+            </div>
+            <input required="required" id="mail" type="text" name="mail" placeholder="Adresse mail">
+
+            <div class="actif">
+                <span>Etes-vous à la recherche d'un emploie ?</span>
+                <input class="radioBut" id="Oui" type="radio" name="rechercheEmpl" value="Oui" checked>
+                <label for="Oui">Oui</label>
+                <input class="radioBut" id="Non" type="radio" name="rechercheEmpl" value="Non">
+                <label for="Non">Non</label>
+            </div>
+
+            <h3>Veuillez selectionner votre/vos handicape(s) :</h3>
+            <div class="marge35">
+                <div class="checkForm">
+                    <input class="checkbox" type="checkbox" id="dys" name="dys">
+                    <label for="dys">Troubles Dyslexiques</label>
+                </div>
+                <div class="checkForm">
+                    <input class="checkbox" type="checkbox" id="aut" name="aute">
+                    <label for="aut">Autisme</label>
+                </div>
+                <div class="checkForm">
+                    <input class="checkbox" type="checkbox" id="dege" name="dege">
+                    <label for="dege">Maladies Dégénératives</label>
+                </div>
+                <div class="checkForm">
+                    <input class="checkbox" type="checkbox" id="psy" name="psy">
+                    <label for="psy">Troubles psychiques</label>
+                </div>
+                <div class="checkForm">
+                    <input class="checkbox" type="checkbox" id="vis" name="vis"
+                    >
+                    <label for="vis">Troubles Visuel</label>
+                </div>
+                <div class="checkForm">
+                    <input class="checkbox" type="checkbox" id="aud" name="aud">
+                    <label for="aud">Troubles Auditifs</label>
+                </div>
+            </div>
+            <input id="submit" type="submit" class="butAjouter" value="Ajouter">
+
+        </form>
+    </div>
+
+{% endblock %}
