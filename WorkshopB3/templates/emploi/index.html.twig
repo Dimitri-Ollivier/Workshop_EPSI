@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EmploiController!{% endblock %}
+
+{% block body %}
+    <br>
+    <center><h3>Nos offres d'emplois</h3></center><br>
+    {% for emploi in emplois %}
+        <div class="container jobContainer">
+            <div class="global">
+                <h1 class="titre">{{ emploi.titre }}</h1>
+                <h2 class="entreprise"><span>Société : </span>{{ emploi.nomentreprise }}</h2>
+                <h3 class="lieu"><span>Lieu : </span>{{ emploi.lieu }}</h3>
+                <div class="desc">{{ emploi.description }}</div>
+                <br>
+                <div class="employeur">Annonce publier par <span>Mr/Mme </span><span>{{ emploi.nomEmployeur }}</span></div>
+                <div class="contact">Contact : {{ emploi.mail }} <span>/</span> <span> {{ emploi.tel }} </span></div>
+            </div>
+        </div><br>
+    {% endfor %}
+
+    <style>
+        .jobContainer {
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 10px;
+            width: fit-content;
+            height: fit-content;
+            margin-bottom: 2em;
+        }
+
+        .container {
+            padding:16px;
+            background-color: #EBEBEB;
+            border-radius: 10px;
+        }
+
+        .titre {
+            color:#222;
+            font-weight:lighter;
+            text-shadow: 0.2px 0.2px 0.2px #000;
+        }
+
+        .entreprise {
+            color:#222;
+            font-weight:lighter;
+            text-shadow: 0.2px 0.2px 0.2px #000;
+        }
+
+        .lieu {
+            color:#222;
+            font-weight:lighter;
+            text-shadow: 0.2px 0.2px 0.2px #000;
+        }
+
+        .desc {
+        }
+
+        .employeur {
+            display:inline-block;
+            font-weight:700;
+
+        }
+
+        .contact {
+            font-weight:700;
+        }
+    </style>
+
+{% endblock %}
