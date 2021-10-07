@@ -135,6 +135,9 @@
       <path value="$PROJECT_DIR$/WorkshopB3/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/WorkshopB3/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/WorkshopB3/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/WorkshopB3/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
