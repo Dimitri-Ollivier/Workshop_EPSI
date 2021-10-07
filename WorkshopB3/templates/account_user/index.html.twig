@@ -83,7 +83,7 @@
         }
 
         .butAjouter {
-            background-color: rgb(254, 87, 22);
+            background-color: #6DB106;
             color: white;
             padding: 5px 10px 5px 10px;
             text-align: center;
@@ -92,7 +92,7 @@
             font-size: 14px;
             border-radius: 8px;
             transition-duration: 0.2s;
-            border: 2px solid rgb(254, 87, 22);
+            border: 2px solid #2C3320;
             font-weight: 400;
             font-family: Frutiger, Arial, Helvetica, sans-serif;
             width: 100%;
@@ -100,13 +100,13 @@
 
         .butAjouter:hover {
             background-color: white;
-            color: rgb(254, 87, 22);
+            color: #6DB106;
             box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
             cursor: pointer;
         }
 
         .butAjouter:active {
-            background-color: DCD3D6;
+            background-color: #E1EEBE;
             box-shadow: 0 2px #666;
             transform: translateY(2px);
 
@@ -136,9 +136,13 @@
             border-bottom: none;
             align-items: center;
         }
+        .Nom {
+            border-radius: 10px 10px 0 0;
+        }
 
         .actif {
             border: solid 1px #b3aca7;
+            border-radius: 0 0 10px 10px;
         }
 
     </style>
@@ -147,7 +151,7 @@
         <br>
         <h1>Création de compte Utilisateur</h1>
         <form id="form" method="post">
-            <input required="required" id="nom" type="text" name="nom" placeholder="Nom">
+            <input class="Nom" required="required" id="nom" type="text" name="nom" placeholder="Nom">
             <input required="required" id="prenom" type="text" name="prenom" placeholder="Prénom">
 
             <div class="genre">
