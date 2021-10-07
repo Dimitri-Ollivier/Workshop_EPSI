@@ -34,7 +34,7 @@
                 <h3 class="lieu">{{ event.lieu }}</h3>
                 <div class="desc">{{ event.description }}</div>
                 <br>
-                <div class="contact">Contact : {{ event.mail }} <span>/</span> <span>{{ event.tel }} </span></div>
+                <div class="contact">Contact : {{ event.mail }} / {{ event.tel }} </div>
             </div>
         </div><br>
         {% endfor %}
@@ -75,7 +75,7 @@
         margin-bottom: 2em;
     }
 
-    .global{
+    .container {
         padding:16px;
         background-color: #EBEBEB;
         border-radius: 10px;
@@ -109,10 +109,8 @@
     }
 
     .contact {
-        float: right;
         font-weight:700;
     }
-
-
 </style>
+
 {% endblock %}
