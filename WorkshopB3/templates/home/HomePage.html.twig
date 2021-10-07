@@ -3,24 +3,41 @@
 {% block title %}Home Page{% endblock %}
 
 {% block body %}
-
 <div class="row">
 
-    <div class="col-5"><br><div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 200px;height: 70px"><center>Job 1</center></div><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 200px;height: 70px"><center>Job 2</center><br>
-        </div><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 200px;height: 70px"><center>Job 3</center></div><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 200px;height: 70px"><center>Job 4</center></div><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 200px;height: 70px"><center>Job 5</center></div><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 200px;height: 70px"><center>Job 6</center></div><br>
+
+    <div class="col-5"><br>
+        <center><h3>Nos dernières offres d'emplois</h3></center><br>
+        {% for emploi in emplois %}
+            <div class="container jobContainer">
+                <div class="global">
+                    <h1 class="titre">{{ emploi.titre }}</h1>
+                    <h2 class="entreprise"><span>Société : </span>{{ emploi.nomentreprise }}</h2>
+                    <h3 class="lieu"><span>Lieu : </span>{{ emploi.lieu }}</h3>
+                    <div class="desc">{{ emploi.description }}</div>
+                    <br>
+                    <div class="employeur">Annonce publier par <span>Mr/Mme </span><span>{{ emploi.nomEmployeur }}</span></div>
+                    <div class="contact">Contact : {{ emploi.mail }} <span>/</span> <span> {{ emploi.tel }} </span></div>
+                </div>
+            </div><br>
+        {% endfor %}
     </div>
+
     <div class="scroll" style="border-style: solid;border-width: 2px;width: 20px;border-top-style: none;border-bottom-style: none"></div>
     <div class="col-6"><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 450px;height: 90px"><center>Event 1</center></div><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 450px;height: 90px"><center>Event 1</center></div><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 450px;height: 90px"><center>Event 1</center></div><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 450px;height: 90px"><center>Event 1</center></div><br>
-        <div class="container" style="border-style: solid;border-width: 1px;border-radius: 10px;width: 450px;height: 90px"><center>Event 1</center></div><br>
+        <center><h3>Evènements à venir</h3></center><br>
+        {% for event in events %}
+        <div class="container eventContainer">
+            <div class="global">
+                <h1 class="titre">{{ event.titre }}</h1>
+                <h2 class="orga">{{ event.nomorganisateur }}</h2>
+                <h3 class="lieu">{{ event.lieu }}</h3>
+                <div class="desc">{{ event.description }}</div>
+                <br>
+                <div class="contact">Contact : {{ event.mail }} <span>/</span> <span>{{ event.tel }} </span></div>
+            </div>
+        </div><br>
+        {% endfor %}
     </div>
     <div class="col-1"></div>
 </div>
@@ -31,16 +48,69 @@
         border: none;
 
         font: 24px/36px sans-serif;
-        width: 200px;
         height: 460px;
         overflow: scroll
     }
     .col-6{
         font: 24px/36px sans-serif;
-        width: 200px;
         height: 460px;
         overflow: scroll;
         direction: rtl;
+    }
+
+    .eventContainer {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .jobContainer {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 2em;
+    }
+
+    .global{
+        padding:16px;
+        background-color: #EBEBEB;
+        border-radius: 10px;
+    }
+
+    .titre {
+        color:#222;
+        font-weight:lighter;
+        text-shadow: 0.2px 0.2px 0.2px #000;
+    }
+
+    .entreprise {
+        color:#222;
+        font-weight:lighter;
+        text-shadow: 0.2px 0.2px 0.2px #000;
+    }
+
+    .lieu {
+        color:#222;
+        font-weight:lighter;
+        text-shadow: 0.2px 0.2px 0.2px #000;
+    }
+
+    .desc {
+    }
+
+    .employeur {
+        display:inline-block;
+        font-weight:700;
+
+    }
+
+    .contact {
+        float: right;
+        font-weight:700;
     }
 
 
