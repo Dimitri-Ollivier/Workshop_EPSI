@@ -1,2 +1,2 @@
 # workshop
-Web application to assist disabled people
+Web application to assist disabled people using Symfony
